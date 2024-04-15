@@ -1,0 +1,15 @@
+<%= form_with(model: task, class: "mb-7") do |form| %>
+  
+
+  <div class="mb-5">
+    <%= form.text_field :description, placeholder: "Adicione outra tarefa", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-300 outline-none focus:border-blue-50" %>
+  </div>
+
+  <div class="mb-5">
+    <%= form.text_field :subtype, placeholder: "Tipo", class: "inline-block w-96 px-3 py-2 mt-2 shadow rounded-md border border-gray-300 outline-none focus:border-blue-50" %>
+  </div>
+
+  <div>
+    <%= form.submit "salvar", class: "btn " %>
+  </div>
+<% end %>
